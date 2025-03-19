@@ -1,0 +1,71 @@
+.main-image-container {
+  width: 100%; /* Полная ширина */
+  height: auto; /* Высота адаптируется */
+  position: relative; /* Родитель для абсолютного позиционирования кнопок */
+  display: flex;
+  justify-content: center; /* Центрирование содержимого */
+  align-items: center; /* Центрирование содержимого */
+}
+
+.main-image {
+  width: 100%; /* Картинка занимает всю ширину */
+  height: auto; /* Высота адаптируется */
+  object-fit: cover; /* Сохраняет пропорции */
+}
+
+.buttons-container {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 60%; /* Сдвигаем кнопки вниз на 40% от высоты контейнера */
+  left: 50%; /* Центрируем кнопки по горизонтали */
+  transform: translate(-50%, -50%); /* Центрируем кнопки по вертикали */
+  display: flex;
+  justify-content: center; /* Центрирование кнопок */
+  gap: 130px; /* Увеличиваем расстояние между кнопками */
+}
+
+.buy-now-button,
+.learn-more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #4977bb;
+  color: white;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.buy-now-button {
+  background-color: #4977bb;
+}
+
+.learn-more-button {
+  background-color: #c14acc;
+}
+
+.buy-now-button:hover {
+  background-color: #4f89e1;
+}
+
+.learn-more-button:hover {
+  background-color: #e970f4;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .buttons-container {
+    flex-direction: column; /* Вертикальное расположение кнопок */
+    gap: 10px; /* Меньший отступ между кнопками */
+  }
+
+  .learn-more-button,
+  .buy-now-button {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+}

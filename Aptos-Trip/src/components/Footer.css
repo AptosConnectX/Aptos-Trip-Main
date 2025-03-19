@@ -1,0 +1,81 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.footer-left p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-link {
+  color: #ffd700; /* Яркий желтый цвет */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fff; /* Белый цвет при наведении */
+  text-decoration: underline;
+}
+
+.footer-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Иконка X (Twitter) */
+.x-twitter img {
+  max-width: 32px; /* Ограничиваем максимальный размер */
+  max-height: 32px;
+  object-fit: contain; /* Сохраняем пропорции */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Эффект при наведении на иконку X (Twitter) */
+.x-twitter img:hover {
+  transform: scale(1.2); /* Увеличиваем иконку при наведении */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Эффект свечения */
+}
+
+/* Остальные иконки */
+.youtube {
+  color: #fff;
+}
+
+.youtube:hover {
+  color: #ff0000;
+}
+
+.telegram {
+  color: #fff;
+}
+
+.telegram:hover {
+  color: #0088cc;
+}
+
+.instagram {
+  color: #fff;
+}
+
+.instagram:hover {
+  color: #e4405f;
+}

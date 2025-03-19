@@ -1,0 +1,193 @@
+/* MintNFT.css */
+
+/* Основной стиль для страницы */
+.mint-nft-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #121a21; /* Темный фон */
+  height: 100%; /* Полная высота экрана */
+}
+
+/* Основной контейнер */
+.mint-nft-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%; /* Растягивается на всю ширину */
+  height: 800px; /* Фиксированная высота общего контейнера */
+  box-sizing: border-box;
+}
+
+/* Картинка слева */
+.image-container {
+  width: 0%; /* Занимает 0% ширины общего контейнера */
+  height: 100%; /* Занимает 50% высоты общего контейнера */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Убираем внутренние отступы */
+  box-sizing: border-box;
+  overflow: hidden; /* Чтобы изображение не выходило за пределы контейнера */
+}
+
+.mystery-car-image {
+  width: 50%;
+  height: auto;
+  object-fit: contain; /* Сохраняет пропорции изображения */
+  border-radius: 10px; /* Закругленные углы картинки */
+  box-shadow: 0 0 40px rgba(0, 194, 255, 0.6); /* Светящийся контур картинки */
+  border: 0px solid #00c2ff; /* Голубая граница картинки */
+}
+
+/* Контейнер справа */
+.right-container {
+  width: 90%; /* Занимает 90% ширины общего контейнера */
+  height: 100%; /* Растягивается на всю высоту общего контейнера */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Выравнивание сверху */
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid blue; /* Синяя граница */
+}
+
+/* Верхний контейнер справа */
+.mission-container {
+  width: 100%; /* Занимает всю ширину правого контейнера */
+  height: 75%; /* Занимает 75% высоты общего контейнера */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 2px solid blue; /* Синяя граница */
+}
+
+.mission-image {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+/* Панель управления минтом */
+.controls-container {
+  background-color: #121a21; /* Темный фон */
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 20px; /* Уменьшенный отступ снизу */
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Информация о минте */
+.mint-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.mint-info p {
+  font-size: 20px;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+/* Кнопка минта */
+.mint-nft-button {
+  background-color: #00c2ff; /* Голубой фон до минта */
+  color: #000000; /* Чёрный текст */
+  border: none;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 194, 255, 0.5); /* Лёгкое свечение */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Промежуток между галочкой и текстом */
+}
+
+.mint-nft-button:hover {
+  background-color: #00aaff; /* Темнее при наведении */
+  transform: scale(1.05); /* Лёгкое увеличение */
+}
+
+.mint-nft-button:disabled {
+  background-color: #4a4a4a;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Стиль для "Already Minted" */
+.mint-nft-button.minted {
+  background-color: #ffcd56; /* Ярко-светло-жёлтый после минта */
+  color: #000000; /* Чёрный текст */
+  box-shadow: 0 0 10px rgba(255, 205, 86, 0.6); /* Жёлтое свечение */
+  cursor: default;
+}
+
+.mint-nft-button.minted:hover {
+  background-color: #ffcd56; /* Не меняем цвет при наведении */
+  transform: none; /* Убираем эффект увеличения */
+}
+
+/* Контейнер для хэша транзакции */
+.transaction-container {
+  background-color: #1c252b; /* Чуть светлее фона страницы */
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10px; /* Небольшой разрыв после controls-container */
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 194, 255, 0.3); /* Лёгкое голубое свечение */
+  border: 1px solid #00c2ff; /* Голубая граница */
+}
+
+/* Заголовок хэша транзакции */
+.transaction-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00c2ff; /* Голубой цвет текста */
+  margin-bottom: 5px;
+}
+
+/* Контент хэша транзакции */
+.transaction-content {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Ссылка на Explorer */
+.transaction-content a {
+  color: #00c2ff; /* Голубой цвет ссылки */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.transaction-content a:hover {
+  color: #00aaff; /* Чуть светлее при наведении */
+  text-decoration: underline;
+}
+
+/* Убираем неиспользуемые стили */
+.custom-counter,
+.counter-btn,
+.counter-display {
+  display: none;
+}

@@ -1,0 +1,23 @@
+/* tripRoute.css */
+
+.trip-route-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121a21; /* Тёмный фон */
+  height: 100%; /* Высота экрана */
+  margin: 0; /* Убираем внешние отступы */
+}
+
+.image-container {
+  width: 100%; /* Растягиваем контейнер на всю ширину */
+  height: 100%; /* Задаём высоту на весь экран */
+  overflow: hidden; /* Прячем лишние части картинки */
+}
+
+.route-image {
+  width: 100%; /* Растягиваем изображение по ширине */
+  height: 100%; /* Растягиваем изображение по высоте */
+  object-fit: cover; /* Сохраняем пропорции изображения */
+}
